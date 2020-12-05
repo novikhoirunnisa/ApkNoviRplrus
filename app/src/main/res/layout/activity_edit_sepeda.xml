@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pink2"
+    tools:context="com.example.sepedarental.EditSepeda">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_130sdp"
+        app:cardCornerRadius="@dimen/_8ssp"
+        app:cardElevation="@dimen/_2ssp"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/updateimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:text="Kode Sepeda"
+                android:textColor="@color/black"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/updatekodesepeda"
+                android:background="@color/white"
+                android:textColor="@color/pink"
+                android:inputType="textEmailAddress"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_35sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:text="Merk"
+                android:textColor="@color/black"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/updatemerk"
+                android:background="#fff"
+                android:textColor="#FF69B4"
+                android:inputType="textEmailAddress"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_35sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="jenis"
+                android:textColor="@color/black"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/updatejenis"
+                android:background="@color/white"
+                android:textColor="@color/pink"
+                android:inputType="textEmailAddress"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_35sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Warna"
+                android:textColor="@color/black"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/updatewarna"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_35sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Harga Sewa"
+                android:textColor="@color/black"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/updatehargasewa"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_35sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/simpan1"
+        android:text="simpan"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
